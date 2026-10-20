@@ -30,5 +30,5 @@ pub fn count_dimes(cents: u32) -> u32 {
 /// assert_eq!(leftover_cents(87), 2);
 /// ```
 pub fn leftover_cents(cents: u32) -> f64 {
-    (cents % 25) % 10
+    ((cents % 25) % 10) as f64
 }
